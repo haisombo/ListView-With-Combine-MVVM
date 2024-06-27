@@ -7,7 +7,7 @@
 
 import Combine
 import Foundation
-import CoreLocation
+//import CoreLocation
 
 struct UserDetailViewModel {
     // MARK: - Properties
@@ -35,12 +35,12 @@ extension UserDetailViewModel {
         return [user.address.street, user.address.suite, user.address.city, user.address.zipcode].joined(separator: " ")
     }
 
-    var location: CLLocation? {
-        if let lat = Double(user.address.geo.lat), let lng = Double(user.address.geo.lng) {
-            return CLLocation.init(latitude: lat, longitude: lng)
-        }
-        else {
-            return nil
-        }
-    }
+//    var location: CLLocation? {
+//        if let lat = Double(user.address.geo.lat), let lng = Double(user.address.geo.lng) {
+//            return CLLocation.init(latitude: lat, longitude: lng)
+//        }
+//        else {
+//            return nil
+//        }
+//    }
 }

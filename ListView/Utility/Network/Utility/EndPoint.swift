@@ -13,4 +13,6 @@ import Foundation
 enum EndPoint: String {
     /// This end-point will return the list of users.
     case user = "users"
+    case detail = "detail"
+
 }

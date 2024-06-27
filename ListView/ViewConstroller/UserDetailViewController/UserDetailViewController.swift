@@ -55,7 +55,7 @@ extension UserDetailViewController {
     private func updateView(_ viewModel: UserDetailViewModel?) {
         guard let viewModel = viewModel else { return }
         updateUserDetail(viewModel)
-        updateUserLocationInMap(with: viewModel.location, and: viewModel.address)
+//        updateUserLocationInMap(with: viewModel.location, and: viewModel.address)
     }
 
     private func updateUserDetail(_ viewModel: UserDetailViewModel) {
